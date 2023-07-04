@@ -1,3 +1,104 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .wtf {
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(
+      90deg,
+      rgba(249, 248, 247, 0) 0%,
+      #fbfafa 9.09%,
+      rgba(249, 248, 247, 0) 100%
+    );
+    background-blend-mode: overlay;
+    height: 1px;
+    width: 100%;
+  }
+
+  .kaman {
+    box-shadow: 0px 14px 44px rgba(50, 83, 140, 0.3);
+  }
+
+  .wot {
+    background: linear-gradient(
+      178deg,
+      rgba(225, 229, 239, 0) 0%,
+      #e1e5ef 39%,
+      #96a0bf 100%
+    );
+  }
+
+  .fua {
+    /* background-image: url('/public/images/hehe.png'); */
+    background: url('public/images/blur.png') no-repeat,
+      url('public/images/hehe.png') no-repeat right / auto 100%;
+  }
+
+  .subtitle {
+    color: #000;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .hello {
+    filter: blur(25px);
+    backdrop-filter: blur(25px);
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: -70px;
+    backdrop-filter: blur(120px);
+    filter: blur(300px);
+  }
+
+  .yes {
+    background: linear-gradient(
+      rgba(197, 204, 222, 0) 0%,
+      rgb(197, 204, 222) 100%
+    );
+    backdrop-filter: blur(10px);
+  }
+
+  h4,
+  .h4 {
+    color: #000;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  h1,
+  .h1 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 90px;
+    background: linear-gradient(
+      72.97deg,
+      rgb(214, 81, 205) 12.45%,
+      rgba(218, 83, 188, 0.92) 21.61%,
+      rgba(221, 85, 170, 0.84) 30.76%,
+      rgba(225, 86, 153, 0.76) 39.92%,
+      rgba(228, 88, 135, 0.68) 49.07%,
+      rgba(232, 90, 118, 0.6) 58.22%,
+      rgba(186, 72, 94, 0.54) 65.08%,
+      rgba(139, 54, 71, 0.48) 71.94%,
+      rgba(93, 36, 47, 0.42) 78.8%,
+      rgba(46, 18, 24, 0.36) 85.66%,
+      rgba(0, 0, 0, 0.3) 92.51%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .body-2 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+}
